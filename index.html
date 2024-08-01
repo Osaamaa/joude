@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Showcase</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
   <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">HOME</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">about joud</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">shop</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">trending</a>
-        </li>
-        
-        <li class="nav-item">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">about joud</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">trending</a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link" href="#">special offers</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">contact us</a>
           </li>
-      </ul>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+  <main>
   <!-- Main Content -->
-  <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="row row-cols-1 row-cols-md-3 g-4 hero">
     <div class="col">
-      
-        <div>
-            <img src="./logo.png" class="card-img-top-logo" width="100" height="130">
-        
-          </div>
-        <h6>our brand is dedicated to craftting
-            high quality <br>
-            products using sustainable materials
-            and methods.<br>
-            Each item is hand crafted
-            with focus on artistic
-            expression<br>
-            resulting in unique pieces that not only
-            enhance your space<br>
-            but also contribute to a more
-            sustainable future. 
-            </h6>
-            <button class="custom-button">Buy now</button>
-<br>
-            <div>
-                <img src="./under.jpg" class="card-img-top" width="100" height="130">
-              </div>
-        </div>
 
-    <div class="col">
       <div>
-        <img src="./fifth.jpg" class="card-img-top" alt="..." width="150" height="450">
-    
+        <img src="./media/logo.png" class="card-img-top-logo" width="100" height="130">
+
+      </div>
+      <div class="d-flex flex-column gap-4 text-center align-items-center">
+      <h6 class="text-start">our brand is dedicated to craftting
+        high quality <br>
+        products using sustainable materials
+        and methods.<br>
+        Each item is hand crafted
+        with focus on artistic
+        expression<br>
+        resulting in unique pieces that not only
+        enhance your space<br>
+        but also contribute to a more
+        sustainable future.
+      </h6>
+      <button class="custom-button m-0">Buy now</button>
+      </div>
+      <br>
+      <div class="hidesmall under">
+        <img src="./media/under.jpg" class="card-img-top" width="100" height="130">
+      </div>
+    </div>
+
+   <div class="images">
+ <div class="col">
+      <div class="hidesmall">
+        <img src="./media/fifth.jpg" class="card-img-top" alt="..." width="150" height="450">
       </div>
     </div>
     <div class="col">
       <div>
-        <img src="./first.jpg" class="card-img-top" width="150" height="450">
+        <img src="./media/first.jpg" class="card-img-top" width="150" height="450">
       </div>
     </div>
+   </div>
   </div>
   <br>
-  <div class="row row-cols-1 row-cols-md-4 g-4">    
-    <div class="col">
-        <div class="card h-60 w-70">
-          <img src="./fourth.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">sit of rings</h5>
-            <p class="card-text">choose size</p>
-          </div>
-        </div>
-      </div>
-      
+  <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
     <div class="col">
       <div class="card h-60 w-70">
-        <img src="./third.jpg" class="card-img-top" alt="...">
+        <img src="./media/fourth.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">sit of rings</h5>
+          <p class="card-text">choose size</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-60 w-70">
+        <img src="./media/third.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">earthcore chandelier
             suncatchet</h5>
@@ -102,29 +112,35 @@
     </div>
     <div class="col">
       <div class="card h-60 w-70">
-        <img src="./second.jpg" class="card-img-top" alt="...">
+        <img src="./media/second.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Big round suncatcher</h5>
           <p class="card-text">350</p>
         </div>
       </div>
     </div>
-    
+
     <div class="col">
-        <div class="card h-60 w-70">
-          <img src="./fifth.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">set of rings 2</h5>
-            <p class="card-text">choose size</p>
-          </div>
+      <div class="card h-60 w-70">
+        <img src="./media/fifth.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">set of rings 2</h5>
+          <p class="card-text">choose size</p>
         </div>
       </div>
-      <div class="container mt-5">
-        <div class="d-flex justify-content-center">
-          <img src="./under.jpg" class="card-img-top" width="40" height="80" alt="Centered Image">
-        </div>
+    </div>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center under">
+        <img src="./media/under.jpg" class="card-img-top" width="40" height="80" alt="Centered Image">
       </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </div>
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
